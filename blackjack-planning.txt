@@ -1,0 +1,114 @@
+Canvas, Module 3, In-Class: BlackJack Exercise
+-------------------------------------------------------
+Step.1) Familiarize yourself with the html and the Class
+
+- branch2-ticket2: after viewing the html and css provided in the orginal clone, 
+create a new BlackJack html, css, and js file that will contain all of your work. 
+The HTML will contain the following elements.
+--->container Class
+--->row 1: will be for the scoreboard and the applicaiton logo
+--->row 2: will be for the dealer label and the dealer name should one be prompted.
+--->row 3: will be for the dealer side of the table which will eventually hold the cards for 
+the dealers cards. 
+--->row 4: will be for the player label and the player name, should one be prompted.
+--->row 5: will be for the player's side of the table which will eventually hold the player's 
+cards.
+--->row 6: will hold the "Deal", "Hit", and "Stand" buttons. 
+
+Step.2) Style The page
+
+- branch3-ticket3: Go into the css and style the elements to either the specifications of the 
+assignment or to your own customized specifications.
+--->labels and scoreboards will be styled black and grey. 
+--->player and dealer tables will be styled light green with dark green borders
+--->NOTE: ask instructor if we can style the css to our own specifications.
+
+Step.3) Cards on the table
+
+-branch4-ticket4: hard-code the card images into the html document. we can use 
+javascript to add the right cards later. Then we will link (set src attribute) to card images in 
+the folder.
+
+Step.4) Dealing the cards
+
+-branch5-ticket5: go into js file and create an eventListener to each of the buttons.
+
+--->The "deal" button eventListener must do the following:
+* create a new image elements
+* match it with the corresponding object inside of the array holding the cards
+* appends it to the player's hand and the dealer's hand (empty array).
+
+--NOTE--
+The deal button should only be pressed 4 times: once for the twice for the player, 
+and twice for the dealer. 
+
+--NOTE--
+The second card dealt to the dealer is supposed to face-down. This needs to be communicatd to the 
+javascript code. 
+---> Possible Solution: 
+* press the "deal" button three times (twice for the player, and once for the dealer). 
+* When the user presses "hit" or "stand", the second card is dealt and the calculation is made
+in order to determine a winner. 
+
+--->The "hit" button eventListener must do the following:
+* create an image element
+* match the image with the corresponding object in the array
+* appends the image to the player's hand 
+
+--->The "stand" button eventListener must do the following:
+* If create an image element
+* match the element with corresponding object in the dealer's hand (array)
+* appends the image to the dealer's hand
+
+Step 5.) Image from cards
+
+-branch6-ticket6: create a function that matches the images in the given file folder
+to its corresponding object in the array(s) holding the player hand and the dealer hand. 
+
+--->Name of function will be called: getCardImage();
+
+Step.6) Render Hands
+
+-branch7-ticket7: create a function that takes the card (which has alredy been matched with its 
+corresponding objeect) and renders it onto the html
+
+Step 7) Shuffle The Deck
+
+-branch8-ticket8: create a seperate function that shuffles the deck of cards 
+created by the buildDeck() function declared and instantiated earlier
+
+--NOTE--
+the name of this function will be: shuffleDeck()
+
+Step 8) Calculate the points
+
+-branch9-ticket9: create a seperate function that calculates the points for the 
+player's hands and the dealer's hands 
+-->It is within this function that "WINS" and "BUSTS" will be determined. 
+-->this will be printed, along with the corresponding integer score.
+-->If conditions are met for a winner, all other functionality will be rendered null 
+and the only option will be to restart the game.
+
+--NOTE--
+the name of this function will be: calculatePoints()
+
+Step 10) Display points
+
+-branch10-ticket10: create a seperate function that displays the results
+returned by the calculatePoints function declared before.
+
+--NOTE--
+the name of this function will be: displayPoints()
+
+Step 11) Restart the game 
+
+-branch11-ticket11: create a fourth button called reset, which corresponds to the 
+funciton that does what is implied. Until a winner is chosen, this button will be
+be disabled.
+
+--NOTE--
+the name of this function will be: resetGame()
+
+
+
+

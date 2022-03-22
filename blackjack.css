@@ -1,0 +1,38 @@
+body{
+    background-color: lightgray;
+}
+
+#status-bar{
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+#dealer-name{
+    background-color: black;
+    height: 43px;
+    width:auto;
+    border-radius: 10px;
+}
+
+#dealer-hand{
+    background-color: green;
+    border: 10px solid darkgreen;
+    border-radius: 10px;
+    height:174px;
+}
+
+#player-name{
+    background-color: black;
+    height: 43px;
+    width:auto;
+    border-radius: 10px;
+
+}
+
+#player-hand{
+    background-color: green;
+    border: 10px solid darkgreen;
+    border-radius: 10px;
+    height:174px;
+}

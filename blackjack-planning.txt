@@ -120,4 +120,14 @@ CSS for "blackjack.html" will be provided next
 Update to the notes also provided.
 
 
---------------------------Branch 2: HTML & CSS, Ticket 3------------------------------------
+--------------------------Branch 3: CSS, Ticket 3------------------------------------
+
+CSS provided for the html previously pushed. 
+
+Design deviates from what was originally cloned down.
+
+Commented out placeholders for cards in the html in order to test DOM Javascript placement
+dynamically. 
+
+--------------------------Branch 4: ------------------------------------
+

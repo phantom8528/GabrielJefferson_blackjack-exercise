@@ -109,6 +109,15 @@ be disabled.
 --NOTE--
 the name of this function will be: resetGame()
 
+--------------------------Branch 2: HTML & CSS, Ticket 2------------------------------------
+
+Decided to deviate from the html provided in the original clone down. 
+
+I've also provided a logo for the black application. 
+
+CSS for "blackjack.html" will be provided next
+
+Update to the notes also provided.
 
 
-
+--------------------------Branch 2: HTML & CSS, Ticket 3------------------------------------

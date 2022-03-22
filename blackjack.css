@@ -36,3 +36,10 @@ body{
     border-radius: 10px;
     height:174px;
 }
+
+/* -----------------DIMENSIONS FOR PLAYING CARDS------------------ */
+
+img{ /*<-- Each table can fit 12 cards at this setting*/
+    height: 153px;
+    margin-left:6px; 
+}

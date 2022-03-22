@@ -129,5 +129,16 @@ Design deviates from what was originally cloned down.
 Commented out placeholders for cards in the html in order to test DOM Javascript placement
 dynamically. 
 
---------------------------Branch 4: ------------------------------------
+--------------------------Branch 4, Ticket 4: ------------------------------------
+
+Instead of adding cards with javascript, I used html and css to hard-code the playing card images 
+into the tables. 
+
+With current html settings, the tables for both the dealer and the player can comfortably
+hold 12 cards. 
+
+Javascript will conditionals will reflect limitations for how many cards can be put onto the 
+tables.
+
+
 

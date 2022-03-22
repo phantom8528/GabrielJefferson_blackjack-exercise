@@ -140,5 +140,14 @@ hold 12 cards.
 Javascript will conditionals will reflect limitations for how many cards can be put onto the 
 tables.
 
+--------------------------Branch 5, Ticket 5: ------------------------------------
+
+Created eventListener for the "Deal" button. 
+
+Recording included as demonstration.
+
+Used the same card for the test / demonstration.
+
+
 
 

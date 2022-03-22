@@ -1,0 +1,55 @@
+#status-bar{
+    padding:1rem;
+    background-color: black;
+    border:2px solid white;
+    color:white;
+    border-radius: 10px;
+}
+
+.img-placeholder {
+    background-color: black;
+    display: flex;
+    height: 164px;
+    margin: 5px;
+    width: 439px;
+}
+
+#dealer-name{
+    padding:1rem;
+    background-color: black;
+    border:2px solid white;
+    color:white;
+    border-radius: 10px;
+}
+
+#dealer-hand{
+    background-color: forestgreen;
+    padding:1rem;
+    border:5px solid darkslategrey;
+    border-radius: 10px;
+    height:150px;
+}
+/* #dealer-card-1{
+    height: 100px;
+} */
+
+#player-name{
+    padding:1rem;
+    background-color: black;
+    border:2px solid white;
+    color:white;
+    border-radius: 10px;
+}
+
+#player-hand{
+    background-color: forestgreen;
+    padding:1rem;
+    border:5px solid darkslategrey;
+    border-radius: 10px;
+    height:150px;
+}
+
+#player-controls{
+    width: 100%;
+}
+

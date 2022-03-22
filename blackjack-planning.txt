@@ -121,3 +121,11 @@ Update to the notes also provided.
 
 
 --------------------------Branch 2: HTML & CSS, Ticket 3------------------------------------
+
+CSS Created for the previously created html. 
+
+Card table and display panels are slightly bigger. 
+
+--------------------------Branch 3: HTML & CSS, Ticket 4------------------------------------
+
+

@@ -109,6 +109,9 @@ be disabled.
 --NOTE--
 the name of this function will be: resetGame()
 
+--------------------------AMENDMENTS AND UPDATES TO THE PLAN------------------------------------
+
+
 --------------------------Branch 2: HTML & CSS, Ticket 2------------------------------------
 
 Decided to deviate from the html provided in the original clone down. 
@@ -147,6 +150,34 @@ Created eventListener for the "Deal" button.
 Recording included as demonstration.
 
 Used the same card for the test / demonstration.
+
+--------------------------Branch 6, Ticket 6: ------------------------------------
+
+Plan being amended to do the following:
+--> Amending the dealCards function to account for the player's hand and to account 
+for the number of cards required for each at the beginning of a game. 
+
+-->Update: dealCards given a parameter to accomodate multiple players, should 
+multiplayer functionality be added later on.
+
+-->Update: dealerFaceDown function created in order to account for a BlackJack rule:
+
+"One of the two cards dealt to the dealer must be facedown until the end of a given round"
+
+-->Update: dealCardsRender function created to maintain the number of cards dealt to the dealer 
+and the player when the "Deal" button is clicked.
+When the deal button is clicked, four cards are dealt (2 to the dealer, 2 to the player), with
+one of the cards for the dealer being facedown (due to the dealerFaceDown function being called).
+
+
+
+
+
+--> 
+
+
+
+
 
 
 

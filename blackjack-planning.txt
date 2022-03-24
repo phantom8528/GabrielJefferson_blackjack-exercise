@@ -169,11 +169,17 @@ and the player when the "Deal" button is clicked.
 When the deal button is clicked, four cards are dealt (2 to the dealer, 2 to the player), with
 one of the cards for the dealer being facedown (due to the dealerFaceDown function being called).
 
+--------------------------Branch 7, Ticket 7: ------------------------------------
+
+-->Update: eventListeners added for "Hit" and "Stand" buttons
+-->Update: playerHit function assigned to hit button listener. Adds a card 
+to the player's hand when ever clicked.
+-->Update: Created variables for card generation
+-->Update: Created function to generate cards and instance of the buildDeck function.
+-->Update: Created a function to extract random card from the deck generated 
 
 
 
-
---> 
 
 
 

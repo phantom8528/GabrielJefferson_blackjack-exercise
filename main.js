@@ -1,13 +1,11 @@
 window.addEventListener('DOMContentLoaded', function() { //<-- Execute after page load
 
+
     //Event Listener for the "Deal" Button
     document.getElementById("deal-button").addEventListener(`click`, dealCardsRender);
 
     //Event Listener for "Hit" Button
     document.getElementById("hit-button").addEventListener(`click`, playerHit);
-
-    //Event Listener for "Stand" Button
-    document.getElementById("stand-button").addEventListener(`click`, playerStand);
 
     //Player Hand
     let playerHand = document.getElementById(`player-hand`);
@@ -51,59 +49,66 @@ window.addEventListener('DOMContentLoaded', function() { //<-- Execute after pag
       var card = theDeck[Math.floor(Math.random() * theDeck.length)];
       return card;
     }
+    // let randomCard = randomCardNotShuffle(deck1); //<-- Generates a random playing card
 
-    let randomCard = randomCardNotShuffle(deck1); //<-- Generates a random playing card
-    //------------------------Random Playing Card Generation - END--------------------------------------------------
+    //---------------------Random Playing Card Generation - END--------------------------------------------------
 
-    //------------------------------TEST SECTION-----------------------------------------------
+    //Plan.b) Draws card from deck
+    function getCardFromDeck (theDeck){
+      let card = theDeck.pop();
+      theDeck--
+      return card;
 
-    // card.setAttribute(`src`, `images/${randomCard.rank}_of_${randomCard.suit}.png`);
+    }
 
-    //------------------------------TEST SECTION-----------------------------------------------
+    let drawnCard = getCardFromDeck(deck1);
 
 
-      
+
   //When the deal button is pressed ...
   function dealCards(hand){
     var anyCard = document.createElement(`img`);
-    // HERE <-- card objects stored in deck1 are compared with /images directory
-    // anyCard.setAttribute(`src`, "/Users/corcoding/Desktop/projects/blackjack-exercise/images/2_of_clubs.png");
-    anyCard.setAttribute(`src`, `images/${randomCard.rank}_of_${randomCard.suit}.png`);
-    anyCard.setAttribute(`alt`, `${randomCard.rank} of ${randomCard.suit}`);
+    anyCard.setAttribute(`src`, `images/${drawnCard.rank}_of_${drawnCard.suit}.png`);
+    anyCard.setAttribute(`alt`, `${drawnCard.rank} of ${drawnCard.suit}`);
     hand.appendChild(anyCard);
   }
 
   //Adds a facedown card to the 0 index of the dealer's hand when the "Deal" button is clicked
   function dealerFacedownCard(){
-    var facedown = document.createElement(`img`);
-    facedown.setAttribute (`src`, `/Users/corcoding/Desktop/projects/blackjack-exercise/facedown.png`);
-    facedown.setAttribute(`alt`, "Dealer's Facedown Card");
-    dealerHand.appendChild(facedown);
-  }
+      var facedown = document.createElement(`img`);
+      facedown.setAttribute (`src`, `/Users/corcoding/Desktop/projects/blackjack-exercise/images/facedown.png`);
+      facedown.setAttribute(`alt`, "Dealer's Facedown Card");
+      dealerHand.appendChild(facedown);
+    }
+
+
   //Moderates the number of cards dealt to the players and the dealer
   function dealCardsRender(){
     dealerFacedownCard();
+    dealCards(playerHand);
+    dealCards(playerHand);
     dealCards(dealerHand);
-    dealCards(playerHand);
-    dealCards(playerHand);
-    //Once the dealer and the player have there specified allotment of cards, the button is disabled
+
     if (playerHand.childElementCount == 2 && dealerHand.childElementCount == 2){
       document.getElementById("deal-button").disabled = true;
     }
 
-  }
+    }
 
+  //Deals card to the player
   function playerHit(){
-    var playerCard = document.createElement(`img`);
-    playerCard.setAttribute(`src`, `images/${randomCard.rank}_of_${randomCard.suit}.png`);
-    playerCard.setAttribute(`alt`, `${randomCard.rank} of ${randomCard.suit}`);
-    playerHand.appendChild(playerCard);
-    //HERE <--Calculates points of both the player and the dealer
+    
+      var playerCard = document.createElement(`img`);
+      playerCard.setAttribute(`src`, `images/${drawnCard.rank}_of_${drawnCard.suit}.png`);
+      playerCard.setAttribute(`alt`, `${drawnCard.rank} of ${drawnCard.suit}`);
+      playerHand.appendChild(playerCard);
 
-  }
+      if (playerHand.childElementCount == 12){
+        document.getElementById("hit-button").disabled = true;
+      }
 
-  function playerStand(){
-    //HERE <--Calculates points of both the player and the dealer
-  }
+    }
+
+
 
 }); //<----------- window.addEventListener END -----------------

@@ -178,6 +178,13 @@ to the player's hand when ever clicked.
 -->Update: Created function to generate cards and instance of the buildDeck function.
 -->Update: Created a function to extract random card from the deck generated 
 
+--------------------------Branch 8, Ticket 8: ------------------------------------
+
+-->Update: Made some minor updates since the demo. 
+Program still not 100% operational. Will probably have to start over with a new approach for the
+javascript.
+
+
 
 
 

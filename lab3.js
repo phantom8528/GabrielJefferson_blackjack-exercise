@@ -48,7 +48,7 @@ window.addEventListener('DOMContentLoaded', function() { //<-- Execute after pag
 
     //3. take random card OUT of deck and INTO / ONTO TOP OF playerHand / dealerHand list
 
-    
+
     //-----------------------------------------------------------------------------
 
 
